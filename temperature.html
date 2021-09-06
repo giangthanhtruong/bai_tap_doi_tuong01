@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    class Temperature {
+      constructor(doC) {
+        this.doC = doC;
+      }
+      getC() {
+         return this.doC;
+      }
+      getCF(){
+        return this.doC * 1.8 + 32;
+      }
+      getCK(){
+         return  this.doC + 277.15;
+      }
+    }
+    let doC = new Temperature(25);
+    document.write(doC.getC() + " độ C bằng: " + doC.getCF() + "độ F")
+    document.write("<br/>" + doC.getC() + " độ C bằng: " + doC.getCK() + "độ F")
+
+  </script>
+</body>
+</html>
